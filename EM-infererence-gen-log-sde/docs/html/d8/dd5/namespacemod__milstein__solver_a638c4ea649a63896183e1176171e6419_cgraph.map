@@ -1,0 +1,8 @@
+<map id="mod_milstein_solver::get_brownian_increment" name="mod_milstein_solver::get_brownian_increment">
+<area shape="rect" id="Node000001" title="Simulate an increment of the related Browninar path." alt="" coords="5,29,176,69"/>
+<area shape="rect" id="Node000002" href="$d1/dcc/namespacemod__random__number__generator.html#ab1f623a692b4cd170b49039e246afd57" title="Implementation of the Box&#45;muller algorithm to genrate Gaussian random variables." alt="" coords="224,29,432,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,47,210,47,210,52,176,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="284,30,281,20,288,10,304,5,328,3,356,6,371,13,368,18,354,11,328,8,305,10,291,15,286,21,289,28"/>
+<area shape="rect" id="Node000003" href="$d1/dcc/namespacemod__random__number__generator.html#a7190dd0789517074d019626c692cfcc5" title="Returns a random variables with uniform distribution using the standar gfortran random number generat..." alt="" coords="480,29,688,69"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="432,47,467,47,467,52,432,52"/>
+</map>

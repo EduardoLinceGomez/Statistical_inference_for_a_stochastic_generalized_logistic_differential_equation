@@ -1,0 +1,94 @@
+\hypertarget{namespacemod__milstein__solver}{}\doxysection{mod\+\_\+milstein\+\_\+solver Module Reference}
+\label{namespacemod__milstein__solver}\index{mod\_milstein\_solver@{mod\_milstein\_solver}}
+
+
+This module compute the coeffcients of the underlyng generalized logistc SDE.  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemod__milstein__solver_a16bfa06b499d32cad645bfc8b3be1734}{get\+\_\+brownian\+\_\+increment}} (delta, brownian\+\_\+start, brownian\+\_\+end)
+\begin{DoxyCompactList}\small\item\em Simulate an increment of the related Browninar path. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacemod__milstein__solver_a4526814c92a54d7b7685631a05b8357d}{get\+\_\+milstein\+\_\+iteration}} (delta, current\+\_\+state, current\+\_\+drift, current\+\_\+diffusion, diffusion\+\_\+derivative, sigma, x\+\_\+next)
+\begin{DoxyCompactList}\small\item\em Computes a iteration of the Milstein method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This module compute the coeffcients of the underlyng generalized logistc SDE. 
+
+\begin{DoxyAuthor}{Author}
+E. Lince-\/\+Gomez, F. Baltazar-\/\+Larios, S. Diaz-\/\+Infante \begin{eqnarray*}
+        dX(t) &=& f(X(t)) dt + g(X(t)) dB(t) 
+        \\
+        f(x) &:=& \alpha x \Bigg[ 1 - \Bigg(\frac{x}{K} \Bigg) ^ m \Bigg] 
+        \\
+        g(x) &:=& \sigma x,\qquad t>t_0 \\
+        x_0 &=& X(0), \quad x_0 \in [0, 1] .
+ \end{eqnarray*}
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+the manuscript (...) for more details.
+\end{DoxySeeAlso}
+(details) 
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemod__milstein__solver_a16bfa06b499d32cad645bfc8b3be1734}\label{namespacemod__milstein__solver_a16bfa06b499d32cad645bfc8b3be1734}} 
+\index{mod\_milstein\_solver@{mod\_milstein\_solver}!get\_brownian\_increment@{get\_brownian\_increment}}
+\index{get\_brownian\_increment@{get\_brownian\_increment}!mod\_milstein\_solver@{mod\_milstein\_solver}}
+\doxysubsubsection{\texorpdfstring{get\_brownian\_increment()}{get\_brownian\_increment()}}
+{\footnotesize\ttfamily subroutine mod\+\_\+milstein\+\_\+solver\+::get\+\_\+brownian\+\_\+increment (\begin{DoxyParamCaption}\item[{real(real32), intent(in)}]{delta,  }\item[{real(real32), intent(in)}]{brownian\+\_\+start,  }\item[{real(real32), intent(out)}]{brownian\+\_\+end }\end{DoxyParamCaption})}
+
+
+
+Simulate an increment of the related Browninar path. 
+
+This can be done by simulating the whole path 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delta} & determininstic time step size \\
+\hline
+\mbox{\texttt{ in}}  & {\em brownian\+\_\+start} & current observation of the Brownian process \\
+\hline
+\mbox{\texttt{ in}}  & {\em brownian\+\_\+end} & observation at current time plus step-\/size \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/dd5/namespacemod__milstein__solver_a16bfa06b499d32cad645bfc8b3be1734_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/dd5/namespacemod__milstein__solver_a16bfa06b499d32cad645bfc8b3be1734_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemod__milstein__solver_a4526814c92a54d7b7685631a05b8357d}\label{namespacemod__milstein__solver_a4526814c92a54d7b7685631a05b8357d}} 
+\index{mod\_milstein\_solver@{mod\_milstein\_solver}!get\_milstein\_iteration@{get\_milstein\_iteration}}
+\index{get\_milstein\_iteration@{get\_milstein\_iteration}!mod\_milstein\_solver@{mod\_milstein\_solver}}
+\doxysubsubsection{\texorpdfstring{get\_milstein\_iteration()}{get\_milstein\_iteration()}}
+{\footnotesize\ttfamily subroutine mod\+\_\+milstein\+\_\+solver\+::get\+\_\+milstein\+\_\+iteration (\begin{DoxyParamCaption}\item[{real(real32), intent(in)}]{delta,  }\item[{real(real32), intent(in)}]{current\+\_\+state,  }\item[{real(real32), intent(in)}]{current\+\_\+drift,  }\item[{real(real32), intent(in)}]{current\+\_\+diffusion,  }\item[{real(real32), intent(in)}]{diffusion\+\_\+derivative,  }\item[{real(real32), intent(in)}]{sigma,  }\item[{real(real32), intent(out)}]{x\+\_\+next }\end{DoxyParamCaption})}
+
+
+
+Computes a iteration of the Milstein method. 
+
+Defintion taken from the Kloedens book 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delta} & determininstic time step-\/size \\
+\hline
+\mbox{\texttt{ in}}  & {\em brownian\+\_\+start} & current observation of the Brownian process the Brownian increment. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/dd5/namespacemod__milstein__solver_a4526814c92a54d7b7685631a05b8357d_cgraph}
+\end{center}
+\end{figure}

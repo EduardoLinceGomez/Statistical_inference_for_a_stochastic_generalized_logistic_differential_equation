@@ -1,0 +1,12 @@
+<map id="mod_random_number_generator::unif" name="mod_random_number_generator::unif">
+<area shape="rect" id="Node000001" title="Returns a random variables with uniform distribution using the standar gfortran random number generat..." alt="" coords="719,37,927,77"/>
+<area shape="rect" id="Node000002" href="$d1/dcc/namespacemod__random__number__generator.html#ab1f623a692b4cd170b49039e246afd57" title="Implementation of the Box&#45;muller algorithm to genrate Gaussian random variables." alt="" coords="463,37,671,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="705,60,671,60,671,55,705,55"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="610,26,595,19,567,16,542,18,527,23,521,29,524,36,519,38,516,28,524,18,541,13,567,11,596,14,613,21"/>
+<area shape="rect" id="Node000003" href="$d8/dd5/namespacemod__milstein__solver.html#a638c4ea649a63896183e1176171e6419" title="Simulate an increment of the related Browninar path." alt="" coords="225,5,396,45"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="449,45,396,39,397,33,449,40"/>
+<area shape="rect" id="Node000005" href="$d1/dcc/namespacemod__random__number__generator.html#a037fe0c339383563b18e1a2314fe9710" title="Returns a number with Gaussian distribution using the Box&#45;Muller algortihm." alt="" coords="207,69,415,109"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="449,75,415,79,414,74,449,69"/>
+<area shape="rect" id="Node000004" href="$d8/dd5/namespacemod__milstein__solver.html#a283e49b9c27d2db70dea7adcd22f2d80" title="Computes a iteration of the Milstein method." alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="212,28,159,28,159,23,212,23"/>
+</map>

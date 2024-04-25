@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bevia2023}
+V.~Bevia, J.~Calatayud, J.-C. Cortés, and M.~Jornet.
+\newblock {On the generalized logistic random differential equation:
+  Theoretical analysis and numerical simulations with real-world data}.
+\newblock {\em Communications in Nonlinear Science and Numerical Simulation},
+  116:106832, 2023.
+
+\bibitem{Braumann2008}
+Carlos~A. Braumann.
+\newblock {Growth and extinction of populations in randomly varying
+  environments}.
+\newblock {\em Computers \& Mathematics with Applications}, 56(3):631--644,
+  2008.
+
+\bibitem{Cortes2019}
+J.-C. Cortés, A.~Navarro-Quiles, J.-V. Romero, and M.-D. Roselló.
+\newblock {Analysis of random non-autonomous logistic-type differential
+  equations via the Karhunen–Loève expansion and the Random Variable
+  Transformation technique}.
+\newblock {\em Communications in Nonlinear Science and Numerical Simulation},
+  72:121--138, 2019.
+
+\bibitem{Liu2013}
+Meng Liu and Ke~Wang.
+\newblock {A note on stability of stochastic logistic equation}.
+\newblock {\em Applied Mathematics Letters}, 26(6):601--606, 2013.
+
+\bibitem{Schurz2007}
+Henri Schurz.
+\newblock Modeling, analysis and discretization of stochastic logistic
+  equations.
+\newblock {\em Int. J. Numer. Anal. Model.}, 4(2):178--197, 2007.
+
+\end{thebibliography}

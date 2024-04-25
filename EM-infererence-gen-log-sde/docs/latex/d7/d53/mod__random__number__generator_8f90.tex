@@ -1,0 +1,18 @@
+\hypertarget{mod__random__number__generator_8f90}{}\doxysection{src/mod\+\_\+random\+\_\+number\+\_\+generator.f90 File Reference}
+\label{mod__random__number__generator_8f90}\index{src/mod\_random\_number\_generator.f90@{src/mod\_random\_number\_generator.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacemod__random__number__generator}{mod\+\_\+random\+\_\+number\+\_\+generator}}
+\begin{DoxyCompactList}\small\item\em This module implements the Box-\/\+Muller algorithm to generate random variables with standard Gaussian distribution from a uniform ditributed random variable. This module enclose tree functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_ab84a1686de9361f9d7ac623160524f61}{mod\+\_\+random\+\_\+number\+\_\+generator\+::unif}} ()
+\begin{DoxyCompactList}\small\item\em Returns a random variables with uniform distribution using the standar gfortran random number generator, the returned value is a real 32. \end{DoxyCompactList}\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_aa3bb4b1a0f7f2d8f6ac1d2b6518f59d6}{mod\+\_\+random\+\_\+number\+\_\+generator\+::boxmuller}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of the Box-\/muller algorithm to genrate Gaussian random variables. \end{DoxyCompactList}\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_ab22d1a4cd14d9bdee67bd6d3d83ce9d4}{mod\+\_\+random\+\_\+number\+\_\+generator\+::normalvar}} ()
+\begin{DoxyCompactList}\small\item\em Returns a number with Gaussian distribution using the Box-\/\+Muller algortihm. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacemod__random__number__generator_a7a1afa36de735d28302de4e4004d31f4}{mod\+\_\+random\+\_\+number\+\_\+generator\+::mkl\+\_\+gaussian\+\_\+sampler}} (buffer\+\_\+size, mean\+\_\+a, std\+\_\+a, user\+\_\+seed, gaussian\+\_\+sample)
+\end{DoxyCompactItemize}

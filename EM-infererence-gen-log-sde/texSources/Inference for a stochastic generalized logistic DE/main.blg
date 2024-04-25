@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "panik"
+Warning--I didn't find a database entry for "kl-pl"
+Warning--I didn't find a database entry for "iacus"
+Warning--I didn't find a database entry for "br-go"
+Warning--I didn't find a database entry for "su"
+Warning--I didn't find a database entry for "wei"
+Warning--I didn't find a database entry for "li-sh"
+Warning--I didn't find a database entry for "bl-so-14"
+Warning--I didn't find a database entry for "mc-kr-97"
+You've used 5 entries,
+            2118 wiz_defined-function locations,
+            545 strings with 5025 characters,
+and the built_in function-call counts, 1705 in all, are:
+= -- 172
+> -- 73
+< -- 0
++ -- 29
+- -- 24
+* -- 134
+:= -- 294
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 27
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 55
+empty$ -- 133
+format.name$ -- 24
+if$ -- 341
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 22
+quote$ -- 0
+skip$ -- 36
+stack$ -- 0
+substring$ -- 143
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 20
+warning$ -- 0
+while$ -- 19
+width$ -- 6
+write$ -- 57
+(There were 9 warnings)

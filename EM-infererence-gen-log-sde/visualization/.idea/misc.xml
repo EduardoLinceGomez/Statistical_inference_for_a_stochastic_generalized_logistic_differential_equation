@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="enabledOnReformat" value="true" />
+    <option name="enabledOnSave" value="true" />
+    <option name="sdkUUID" value="c2b735f0-0ab2-406c-81fb-d92ba7895b57" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="$USER_HOME$/anaconda3 (2)" project-jdk-type="Python SDK" />
+</project>

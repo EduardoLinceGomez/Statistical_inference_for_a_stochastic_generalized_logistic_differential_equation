@@ -1,0 +1,1141 @@
+\hypertarget{mkl__vsl_8f90}{}\doxysection{src/mkl\+\_\+vsl.f90 File Reference}
+\label{mkl__vsl_8f90}\index{src/mkl\_vsl.f90@{src/mkl\_vsl.f90}}
+\doxysubsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmkl__vsl__type_1_1vsl__stream__state}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+stream\+\_\+state}}
+\item 
+type \mbox{\hyperlink{structmkl__vsl__type_1_1vsl__conv__task}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+conv\+\_\+task}}
+\item 
+type \mbox{\hyperlink{structmkl__vsl__type_1_1vsl__corr__task}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+corr\+\_\+task}}
+\item 
+type \mbox{\hyperlink{structmkl__vsl__type_1_1vsl__ss__task}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+task}}
+\item 
+type \mbox{\hyperlink{structmkl__vsl__type_1_1vsl__brng__properties}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+properties}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvnewtask}{mkl\+\_\+vsl\+::vsldconvnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvnewtask}{mkl\+\_\+vsl\+::vslsconvnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvnewtask}{mkl\+\_\+vsl\+::vslzconvnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvnewtask}{mkl\+\_\+vsl\+::vslcconvnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrnewtask}{mkl\+\_\+vsl\+::vsldcorrnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrnewtask}{mkl\+\_\+vsl\+::vslscorrnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrnewtask}{mkl\+\_\+vsl\+::vslzcorrnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrnewtask}{mkl\+\_\+vsl\+::vslccorrnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvnewtask1d}{mkl\+\_\+vsl\+::vsldconvnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvnewtask1d}{mkl\+\_\+vsl\+::vslsconvnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvnewtask1d}{mkl\+\_\+vsl\+::vslzconvnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvnewtask1d}{mkl\+\_\+vsl\+::vslcconvnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrnewtask1d}{mkl\+\_\+vsl\+::vsldcorrnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrnewtask1d}{mkl\+\_\+vsl\+::vslscorrnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrnewtask1d}{mkl\+\_\+vsl\+::vslzcorrnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrnewtask1d}{mkl\+\_\+vsl\+::vslccorrnewtask1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvnewtaskx}{mkl\+\_\+vsl\+::vsldconvnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvnewtaskx}{mkl\+\_\+vsl\+::vslsconvnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvnewtaskx}{mkl\+\_\+vsl\+::vslzconvnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvnewtaskx}{mkl\+\_\+vsl\+::vslcconvnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrnewtaskx}{mkl\+\_\+vsl\+::vsldcorrnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrnewtaskx}{mkl\+\_\+vsl\+::vslscorrnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrnewtaskx}{mkl\+\_\+vsl\+::vslzcorrnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrnewtaskx}{mkl\+\_\+vsl\+::vslccorrnewtaskx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvnewtaskx1d}{mkl\+\_\+vsl\+::vsldconvnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvnewtaskx1d}{mkl\+\_\+vsl\+::vslsconvnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvnewtaskx1d}{mkl\+\_\+vsl\+::vslzconvnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvnewtaskx1d}{mkl\+\_\+vsl\+::vslcconvnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrnewtaskx1d}{mkl\+\_\+vsl\+::vsldcorrnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrnewtaskx1d}{mkl\+\_\+vsl\+::vslscorrnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrnewtaskx1d}{mkl\+\_\+vsl\+::vslzcorrnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrnewtaskx1d}{mkl\+\_\+vsl\+::vslccorrnewtaskx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslconvdeletetask}{mkl\+\_\+vsl\+::vslconvdeletetask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcorrdeletetask}{mkl\+\_\+vsl\+::vslcorrdeletetask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslconvcopytask}{mkl\+\_\+vsl\+::vslconvcopytask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcorrcopytask}{mkl\+\_\+vsl\+::vslcorrcopytask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_conv_set_mode}{mkl\+\_\+vsl\+::vsl\+Conv\+Set\+Mode}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_corr_set_mode}{mkl\+\_\+vsl\+::vsl\+Corr\+Set\+Mode}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_conv_set_internal_precision}{mkl\+\_\+vsl\+::vsl\+Conv\+Set\+Internal\+Precision}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_corr_set_internal_precision}{mkl\+\_\+vsl\+::vsl\+Corr\+Set\+Internal\+Precision}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_conv_set_start}{mkl\+\_\+vsl\+::vsl\+Conv\+Set\+Start}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_corr_set_start}{mkl\+\_\+vsl\+::vsl\+Corr\+Set\+Start}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_conv_set_decimation}{mkl\+\_\+vsl\+::vsl\+Conv\+Set\+Decimation}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsl_corr_set_decimation}{mkl\+\_\+vsl\+::vsl\+Corr\+Set\+Decimation}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvexec}{mkl\+\_\+vsl\+::vsldconvexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvexec}{mkl\+\_\+vsl\+::vslsconvexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvexec}{mkl\+\_\+vsl\+::vslzconvexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvexec}{mkl\+\_\+vsl\+::vslcconvexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrexec}{mkl\+\_\+vsl\+::vsldcorrexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrexec}{mkl\+\_\+vsl\+::vslscorrexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrexec}{mkl\+\_\+vsl\+::vslzcorrexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrexec}{mkl\+\_\+vsl\+::vslccorrexec}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvexec1d}{mkl\+\_\+vsl\+::vsldconvexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvexec1d}{mkl\+\_\+vsl\+::vslsconvexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvexec1d}{mkl\+\_\+vsl\+::vslzconvexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvexec1d}{mkl\+\_\+vsl\+::vslcconvexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrexec1d}{mkl\+\_\+vsl\+::vsldcorrexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrexec1d}{mkl\+\_\+vsl\+::vslscorrexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrexec1d}{mkl\+\_\+vsl\+::vslzcorrexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrexec1d}{mkl\+\_\+vsl\+::vslccorrexec1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvexecx}{mkl\+\_\+vsl\+::vsldconvexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvexecx}{mkl\+\_\+vsl\+::vslsconvexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvexecx}{mkl\+\_\+vsl\+::vslzconvexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvexecx}{mkl\+\_\+vsl\+::vslcconvexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrexecx}{mkl\+\_\+vsl\+::vsldcorrexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrexecx}{mkl\+\_\+vsl\+::vslscorrexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrexecx}{mkl\+\_\+vsl\+::vslzcorrexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrexecx}{mkl\+\_\+vsl\+::vslccorrexecx}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldconvexecx1d}{mkl\+\_\+vsl\+::vsldconvexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsconvexecx1d}{mkl\+\_\+vsl\+::vslsconvexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzconvexecx1d}{mkl\+\_\+vsl\+::vslzconvexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcconvexecx1d}{mkl\+\_\+vsl\+::vslcconvexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldcorrexecx1d}{mkl\+\_\+vsl\+::vsldcorrexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslscorrexecx1d}{mkl\+\_\+vsl\+::vslscorrexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslzcorrexecx1d}{mkl\+\_\+vsl\+::vslzcorrexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslccorrexecx1d}{mkl\+\_\+vsl\+::vslccorrexecx1d}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrnguniform}{mkl\+\_\+vsl\+::vsrnguniform}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrnguniform}{mkl\+\_\+vsl\+::vdrnguniform}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrnggaussian}{mkl\+\_\+vsl\+::vsrnggaussian}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrnggaussian}{mkl\+\_\+vsl\+::vdrnggaussian}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrnggaussianmv}{mkl\+\_\+vsl\+::vsrnggaussianmv}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrnggaussianmv}{mkl\+\_\+vsl\+::vdrnggaussianmv}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrngexponential}{mkl\+\_\+vsl\+::vsrngexponential}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrngexponential}{mkl\+\_\+vsl\+::vdrngexponential}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrnglaplace}{mkl\+\_\+vsl\+::vsrnglaplace}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrnglaplace}{mkl\+\_\+vsl\+::vdrnglaplace}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrngweibull}{mkl\+\_\+vsl\+::vsrngweibull}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrngweibull}{mkl\+\_\+vsl\+::vdrngweibull}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrngcauchy}{mkl\+\_\+vsl\+::vsrngcauchy}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrngcauchy}{mkl\+\_\+vsl\+::vdrngcauchy}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrngrayleigh}{mkl\+\_\+vsl\+::vsrngrayleigh}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrngrayleigh}{mkl\+\_\+vsl\+::vdrngrayleigh}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrnglognormal}{mkl\+\_\+vsl\+::vsrnglognormal}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrnglognormal}{mkl\+\_\+vsl\+::vdrnglognormal}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrnggumbel}{mkl\+\_\+vsl\+::vsrnggumbel}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrnggumbel}{mkl\+\_\+vsl\+::vdrnggumbel}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrnggamma}{mkl\+\_\+vsl\+::vsrnggamma}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrnggamma}{mkl\+\_\+vsl\+::vdrnggamma}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrngbeta}{mkl\+\_\+vsl\+::vsrngbeta}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrngbeta}{mkl\+\_\+vsl\+::vdrngbeta}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsrngchisquare}{mkl\+\_\+vsl\+::vsrngchisquare}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vdrngchisquare}{mkl\+\_\+vsl\+::vdrngchisquare}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virnguniform}{mkl\+\_\+vsl\+::virnguniform}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virnguniformbits}{mkl\+\_\+vsl\+::virnguniformbits}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virnguniformbits32}{mkl\+\_\+vsl\+::virnguniformbits32}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virnguniformbits64}{mkl\+\_\+vsl\+::virnguniformbits64}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virngbernoulli}{mkl\+\_\+vsl\+::virngbernoulli}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virnggeometric}{mkl\+\_\+vsl\+::virnggeometric}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virngbinomial}{mkl\+\_\+vsl\+::virngbinomial}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virngmultinomial}{mkl\+\_\+vsl\+::virngmultinomial}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virnghypergeometric}{mkl\+\_\+vsl\+::virnghypergeometric}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virngpoisson}{mkl\+\_\+vsl\+::virngpoisson}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virngpoissonv}{mkl\+\_\+vsl\+::virngpoissonv}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1virngnegbinomial}{mkl\+\_\+vsl\+::virngnegbinomial}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslnewstream}{mkl\+\_\+vsl\+::vslnewstream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslnewstreamex}{mkl\+\_\+vsl\+::vslnewstreamex}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslinewabstractstream}{mkl\+\_\+vsl\+::vslinewabstractstream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldnewabstractstream}{mkl\+\_\+vsl\+::vsldnewabstractstream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsnewabstractstream}{mkl\+\_\+vsl\+::vslsnewabstractstream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldeletestream}{mkl\+\_\+vsl\+::vsldeletestream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcopystream}{mkl\+\_\+vsl\+::vslcopystream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslcopystreamstate}{mkl\+\_\+vsl\+::vslcopystreamstate}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslleapfrogstream}{mkl\+\_\+vsl\+::vslleapfrogstream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslskipaheadstream}{mkl\+\_\+vsl\+::vslskipaheadstream}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslskipaheadstreamex}{mkl\+\_\+vsl\+::vslskipaheadstreamex}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslgetbrngproperties}{mkl\+\_\+vsl\+::vslgetbrngproperties}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslgetnumregbrngs}{mkl\+\_\+vsl\+::vslgetnumregbrngs}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslgetstreamstatebrng}{mkl\+\_\+vsl\+::vslgetstreamstatebrng}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslregisterbrng}{mkl\+\_\+vsl\+::vslregisterbrng}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsavestreamf}{mkl\+\_\+vsl\+::vslsavestreamf}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslloadstreamf}{mkl\+\_\+vsl\+::vslloadstreamf}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsavestreamm}{mkl\+\_\+vsl\+::vslsavestreamm}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslloadstreamm}{mkl\+\_\+vsl\+::vslloadstreamm}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslgetstreamsize}{mkl\+\_\+vsl\+::vslgetstreamsize}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldssnewtask}{mkl\+\_\+vsl\+::vsldssnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsssnewtask}{mkl\+\_\+vsl\+::vslsssnewtask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldssedittask}{mkl\+\_\+vsl\+::vsldssedittask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslsssedittask}{mkl\+\_\+vsl\+::vslsssedittask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslissedittask}{mkl\+\_\+vsl\+::vslissedittask}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditmoments}{mkl\+\_\+vsl\+::vsldsseditmoments}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditmoments}{mkl\+\_\+vsl\+::vslssseditmoments}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditsums}{mkl\+\_\+vsl\+::vsldsseditsums}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditsums}{mkl\+\_\+vsl\+::vslssseditsums}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditcovcor}{mkl\+\_\+vsl\+::vsldsseditcovcor}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditcovcor}{mkl\+\_\+vsl\+::vslssseditcovcor}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditcp}{mkl\+\_\+vsl\+::vsldsseditcp}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditcp}{mkl\+\_\+vsl\+::vslssseditcp}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditpartialcovcor}{mkl\+\_\+vsl\+::vsldsseditpartialcovcor}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditpartialcovcor}{mkl\+\_\+vsl\+::vslssseditpartialcovcor}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditquantiles}{mkl\+\_\+vsl\+::vsldsseditquantiles}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditquantiles}{mkl\+\_\+vsl\+::vslssseditquantiles}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditstreamquantiles}{mkl\+\_\+vsl\+::vsldsseditstreamquantiles}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditstreamquantiles}{mkl\+\_\+vsl\+::vslssseditstreamquantiles}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditpooledcovariance}{mkl\+\_\+vsl\+::vsldsseditpooledcovariance}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditpooledcovariance}{mkl\+\_\+vsl\+::vslssseditpooledcovariance}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditrobustcovariance}{mkl\+\_\+vsl\+::vsldsseditrobustcovariance}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditrobustcovariance}{mkl\+\_\+vsl\+::vslssseditrobustcovariance}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditoutliersdetection}{mkl\+\_\+vsl\+::vsldsseditoutliersdetection}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditoutliersdetection}{mkl\+\_\+vsl\+::vslssseditoutliersdetection}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditmissingvalues}{mkl\+\_\+vsl\+::vsldsseditmissingvalues}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditmissingvalues}{mkl\+\_\+vsl\+::vslssseditmissingvalues}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsseditcorparameterization}{mkl\+\_\+vsl\+::vsldsseditcorparameterization}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssseditcorparameterization}{mkl\+\_\+vsl\+::vslssseditcorparameterization}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vsldsscompute}{mkl\+\_\+vsl\+::vsldsscompute}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssscompute}{mkl\+\_\+vsl\+::vslssscompute}}
+\item 
+interface \mbox{\hyperlink{interfacemkl__vsl_1_1vslssdeletetask}{mkl\+\_\+vsl\+::vslssdeletetask}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacemkl__vsl__type}{mkl\+\_\+vsl\+\_\+type}}
+\item 
+module \mbox{\hyperlink{namespacemkl__vsl}{mkl\+\_\+vsl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a12dd583cf9dd6c8fcfe90588e808cf74}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+status\+\_\+ok}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4c9d0a3f8000a55ce282c3364a2da95e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+error\+\_\+ok}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a8ed8dab9299da6405f2810243691f77c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+error\+\_\+feature\+\_\+not\+\_\+implemented}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a85ad57883108947f897a0270f8765ca3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+error\+\_\+unknown}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aafc319b919ceff39fb503fc18deb2a6e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+error\+\_\+badargs}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a5d1462e70ecbdd94b229d524e24fa1cc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+error\+\_\+mem\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a8e95e11d98391198a4e40f276d67feed}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+error\+\_\+null\+\_\+ptr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9016230da511b5052fc8ee79bca29af8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+error\+\_\+cpu\+\_\+not\+\_\+supported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9aa7e6234dfedb5e7b778444c9b21455}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+invalid\+\_\+brng\+\_\+index}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac13115b3ee342f970884c87aeaaf9b30}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+leapfrog\+\_\+unsupported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac51375c8bd8cbd74a2995671b4c53835}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+skipahead\+\_\+unsupported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a747a12aafaeecde6c95cca5a988bb6f6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+skipaheadex\+\_\+unsupported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_afe63f0692884ba1426fce365dc3d27ee}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+brngs\+\_\+incompatible}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a55ac2e98fdf1127195e8498fdd362769}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+stream}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a8ad59d99a9e3d39719114b266b027298}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+brng\+\_\+table\+\_\+full}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae179c5953061ba81e1e028eeeb4c3c87}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+stream\+\_\+state\+\_\+size}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae4f51fe21af6be4fda092c5b8b3f9375}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+word\+\_\+size}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae5bfca98f4b9cd364b15ac7ac5934607}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+nseeds}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_afe483b97bdb24bb59ea0b157fd5a9d11}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+nbits}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a2d2f928f8ab24049c9c4bffac595eacb}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+qrng\+\_\+period\+\_\+elapsed}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aee891941d213f6455a84ce7de23540a5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+leapfrog\+\_\+nstreams\+\_\+too\+\_\+big}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a2f9fd8b74ff97324f05ad4b31efb6328}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+update}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9c24f3f45de13da56f8b9ccfd9bf0d9f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+no\+\_\+numbers}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aec22c46a0a06c41c5c2c153249a773b8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+invalid\+\_\+abstract\+\_\+stream}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab56d44ff1c3708966f9eb608c56a6d25}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+nondeterm\+\_\+not\+\_\+supported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a53111d2a9386a9ea64a8c0829d5cb9c2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+nondeterm\+\_\+nretries\+\_\+exceeded}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3ee3ed523cc1c1fe37f460d98718b811}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+ars5\+\_\+not\+\_\+supported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a7e969f80d70f233b8d1e48be97a9d292}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+file\+\_\+close}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3a087e5129c7685ff2453e1f146bd337}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+file\+\_\+open}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0caf350bd71bf87ce11839b33378023b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+file\+\_\+write}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aac0563b1ec6dc66a26fca2030b987e43}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+file\+\_\+read}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3c78e96c80d8eb406fb65c52765da902}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+file\+\_\+format}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a274b52f08c07eb79695c0306fb0b6b78}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+unsupported\+\_\+file\+\_\+ver}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a1521416b8f861616e29a9dbe83238ed3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+error\+\_\+bad\+\_\+mem\+\_\+format}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac74387b1889dba83d35496eae3b574b6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+not\+\_\+implemented}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aa21f91157e11fe563d4f6c4739f521f7}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+allocation\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a21f6617e80d68a67dd7590b37cc2fce8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+bad\+\_\+descriptor}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_af9846f0f954585be71b57c17cbe3bde2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+service\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a088028a1c62a9c36cce56e9a9d5cc2eb}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+edit\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab68ff768c7dc6dcb150fce5b1452e28a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+edit\+\_\+prohibited}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0198c769bdda85ce8e7f70fa20c56c2d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+commit\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a64b2819dca362077ee0751de19610c54}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+copy\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a7ba90c9725f57bd48304dc05793e0af1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+delete\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_abdcf8d14b2279b9de007d9ea68758373}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+bad\+\_\+argument}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a92b09e3a0119a401f1fb2a29fede46b9}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+dims}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aa7ca14a90298dd72db7e0fc11efe94b8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+start}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a01b1e508c86b9ed669be136cd71a3615}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+decimation}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a53df7a00c52ebfbb6dc40fa0e10b06a1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+xshape}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a6d99fc81b269159177bf611741b04f1d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+yshape}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a52056533f2f9cb2b3f10c8a1d3bf9c31}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+zshape}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab97e53f05fe7c68fe512252fefe4817a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+xstride}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a351b8132d5f68734a4a6ac4ffc7fa8c0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+ystride}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aacbdbbf4ca9e7cb12f1a70296748f5b6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+zstride}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a59377da6fa3af43146a1095e6f5b6c85}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+x}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad675ed3724c0248a4cab84b2f6802226}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+y}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9066ef105ba6f1100cadcdbce410fd11}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+z}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a383ab57223d30d1e8ffeadd9eab8cf5d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+job}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae8a34889f59f3e1fb90b7496c8c8846a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+kind}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4dc5bdc937d8a276aae7d014b054b2ac}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+mode}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a048324008fcaabb4ca4a61aca0c01887}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+type}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3a0f03adcab463995e3d54afa5c4d889}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+precision}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aae1ccd9d1862cde82fe45a10f9d98d4b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+external\+\_\+precision}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4edd6c8250e878456711e9add6a7e4a6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+internal\+\_\+precision}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae833d3ac74a0494b7b9d4930fc9821ce}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+method}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a01d9a88e7d3038899fea57559a592282}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+cc\+\_\+error\+\_\+other}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab921eb6c866c133659b6400f95bba9a9}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+not\+\_\+full\+\_\+rank\+\_\+matrix}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a34ef0286f4cf4e8253802eb31a5aef41}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+semidefinite\+\_\+cor}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab4b85dd6c627bfb575b85e35738f9f1a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+allocation\+\_\+failure}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_acfb2dd60c2ef5ef4e938aa6ee9a12787}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+dimen}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a990e7c6ff6aeb5b27dfe0eb6847ba41e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+observ\+\_\+n}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_afdfea9a9a3843a127bf58d3f61b8bdc6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+storage\+\_\+not\+\_\+supported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a7940194bd2c6967e14da3cd9cf59e05c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+indc\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a67e49b7638ddf78a1b36bb666d5e4f50}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+weights}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac5df57243430cc28f01e6484c9260693}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mean\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a34648393e35e20f9bc1242d8d9849565}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+2r\+\_\+mom\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_acb721eabcf7fa3ff0603a0855ae5c539}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+3r\+\_\+mom\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac0cd6fc9e12979ad1da5c1596e8069f6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+4r\+\_\+mom\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3a061143afbf5d50a15c0e942b891e1c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+2c\+\_\+mom\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a963d5239b30fbb8c3f9493d5f4c0a83f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+3c\+\_\+mom\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae6adab851931df7f74b2cfb5d2d1509c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+4c\+\_\+mom\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab761348190e2cc028de309814965ee62}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+kurtosis\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0e04e6e1f3b88837477c27eb9efbc87f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+skewness\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae41587612c949757c4ac3d466fc07aa8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+min\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a972a112364d498980b64cd19ee4cc6d9}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+max\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a57d3082c3318a2ce76b892a945516db0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+variation\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a99653d93961129cd3482abf0149527d2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+cov\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_adbe2f94260e438c64fe6a7bd758997a8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+cor\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad58980400358be03990736120a495cd8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+accum\+\_\+weight\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0f1e56bbf85218089870e43f05d0d667}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+quant\+\_\+order\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0e2896abd3d506706154afca7897a3f6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+quant\+\_\+order}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a5233d8888c2273cdc6fbcc5dd0f8d4d8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+quant\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a1ee96b6b68a6d8a3f74070c661f8fae3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+order\+\_\+stats\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4474a5e1e078df3d1ad13c81c53470a3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+momorder\+\_\+not\+\_\+supported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab85a0a7fd4a6446b8b18252edab94b55}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+all\+\_\+observs\+\_\+outliers}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab6bc6cc19b866b7c51dec4ea4256a721}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+robust\+\_\+cov\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4cbe64d436a3f8a6f81d738c44ed1f2d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+robust\+\_\+mean\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a37577caffd8261b1f2fee8f1a0a0ba67}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+method\+\_\+not\+\_\+supported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae32816867137da96357d4ff6fb370319}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+group\+\_\+indc\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a08ed7038b882e322bb17025a11d344cd}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+null\+\_\+task\+\_\+descriptor}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac4c88b083bf2207eee48195a03e475b2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+observ\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac2fd1246c80ebed01972e9ad83a304c0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+singular\+\_\+cov}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad066badd09ddfa780888535aaeffc60c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+pooled\+\_\+cov\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a6dc41c6fa83f8fb4d26663fe8470b005}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+pooled\+\_\+mean\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4b9639c5348a08e4d15f7d49ebc4f4c5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+group\+\_\+cov\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3973d7e10cec399b0d3b0efe158382c4}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+group\+\_\+mean\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_acea4d5890f8245fbcd53c3c1bf5afa47}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+group\+\_\+indc}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad43a71bb8c861a4342d2ff1d78e3d103}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+outliers\+\_\+params\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a64209142830a815cd046f6fec32012cc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+outliers\+\_\+params\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a53f6f5f4e4a78a5e892e8f872285f06b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+outliers\+\_\+weights\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_afccd9f3232a03b3b34c405335cac547b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+robust\+\_\+cov\+\_\+params\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_abc854ebad7840c2d33bea88d172c7dbb}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+robust\+\_\+cov\+\_\+params\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a1d00c2b9e1544932ad58e94fa5f15925}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+storage\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a75fdc05f7f342ab0e50153cb7fcbd93e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+partial\+\_\+cov\+\_\+idx\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a098251301aa9bfa004f39970fbcf5b2e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+partial\+\_\+cov\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a404f05fa5621fe191e603facf11b8e96}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+partial\+\_\+cor\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a73cbe3f64c1aca54bd64c92f7ae52ef7}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+params\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a981c6600ec4cb678831f6d2c29094e59}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+params\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aaa1d902b48328c0bb62163cbf4ed89d6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+bad\+\_\+params\+\_\+n}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a547293da07b0b2327547a077a5e689c9}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+params}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad7cf65ae32c739294623d66b58ad3409}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+init\+\_\+estimates\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a1fdae486cda208dce0d4cd74f19d5e14}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+init\+\_\+estimates\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3fa1a21d7f7b8bdcee8db085fe90e68d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+simul\+\_\+vals\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a3beb4c3e9f9cbddab5f99a58252adae8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+simul\+\_\+vals\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ae8d246c48efa2a500a4d38baef382839}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+estimates\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac7fd8551f07ee65d15b9fc82e5ccd1ea}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+estimates\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a5cfe45c7194ca0424ef3e62197c5a7be}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+simul\+\_\+vals\+\_\+n}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad57de2e13f3937729ed993571a1be7c6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+estimates\+\_\+n}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a83368f75b67edccab85afc88e7a9a4d2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+output\+\_\+params}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a1e8e6d7c604bb86b85d8b6c9dae66377}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+prior\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a2b03d5bee06abcfc35e95b9bd829a74c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+prior\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4acdd6e8674a5b4798181ac9d3ac4cc1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mi\+\_\+missing\+\_\+vals\+\_\+n}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a873b63c87f07ec34b2978cc4df47ad37}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+stream\+\_\+quant\+\_\+params\+\_\+n\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ada2528ecbe2e363b21bbece2016d32ec}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+stream\+\_\+quant\+\_\+params\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab7d49b88a6450256cf71d4771225878a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+stream\+\_\+quant\+\_\+params\+\_\+n}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_acba9af5f24bda51061676b09ddf31eec}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+stream\+\_\+quant\+\_\+params}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aa5f4d1b2151697e740d57926a2ede3ed}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+stream\+\_\+quant\+\_\+order\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0a789aff9ea7a666e36f1f0a8742f42c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+stream\+\_\+quant\+\_\+order}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aaf8a5b52f808a7f04536769fae057e7c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+stream\+\_\+quant\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_adfdb97236f0bfe66e59e3d72f4963ece}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+paramtr\+\_\+cor\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a7a9826db8a54e1144ccb72c1159d6288}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+cor}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a5e4dc65c3fb2a168342609117e45e0c4}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+partial\+\_\+cov\+\_\+idx}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4dafe8457f410daaa9f93fc2ffef1d41}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+sum\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4cdd5796be3664a2b7df9c67d66c06b6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+2r\+\_\+sum\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab1baa9304b621ea3bfa603d358107f2d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+3r\+\_\+sum\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad4315560d52a4684e68466d8d0418145}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+4r\+\_\+sum\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9a5296349160453def304edb19f456de}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+2c\+\_\+sum\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4cb9b77da7bdd57d21653c910dd786d3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+3c\+\_\+sum\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0246071bb49754199a3ba2ccfe778205}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+4c\+\_\+sum\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aebeaff54475fc08d62d957becd9012f3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+cp\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_af8114d55c219ff60f4c367f7b64e4995}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mdad\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_add8968036be02da4f509dccbcffbf9fe}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+mnad\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9c1d5d9668503f4797b60bb295d0813b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+indices\+\_\+not\+\_\+supported}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4f06d2c75def58ae991007f853df12f2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+bad\+\_\+sorted\+\_\+observ\+\_\+addr}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a0fc5b42d64f9727c3185b06054dffb27}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+robcov\+\_\+intern\+\_\+c1}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a10dc2021626844e9257422236fe4c1fa}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+partialcov\+\_\+intern\+\_\+c1}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a5fce9c7bff0600b1efe54db9d65a5ee8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+partialcov\+\_\+intern\+\_\+c2}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a42630d7197e84a5b41ed12370d32800d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+missingvals\+\_\+intern\+\_\+c1}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a314efc5237cec07f11c193e16bb4048e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+missingvals\+\_\+intern\+\_\+c2}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a959faabf2ea14f4c940543afe9a5e6fc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+missingvals\+\_\+intern\+\_\+c3}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a5bc1dc60b7096fc4f4deef75499b6a72}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+missingvals\+\_\+intern\+\_\+c4}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab42a80b99cc844ed1d0a1dfe1fbd665c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+missingvals\+\_\+intern\+\_\+c5}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a12c9d0932c57783349190aa6212e4008}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+paramtrcor\+\_\+intern\+\_\+c1}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a7b69e46dbbf2b38aa68f181184241f0f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+covrank\+\_\+internal\+\_\+error\+\_\+c1}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ac1f053b5806a5364277b1b09563c9ffc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+invcov\+\_\+internal\+\_\+error\+\_\+c1}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a758712d8fb74bdff9ce1de46faf0acbb}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+error\+\_\+invcov\+\_\+internal\+\_\+error\+\_\+c2}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9fc0c044c4cdc7ba7f5ff719a41ca78e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+conv\+\_\+mode\+\_\+auto}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a728889604388b0bbf887ad706f510997}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+corr\+\_\+mode\+\_\+auto}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a2895b0c329342ed1ae055e847cabfc3e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+conv\+\_\+mode\+\_\+direct}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a8e73940083b77c46e722627259e9fbf1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+corr\+\_\+mode\+\_\+direct}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_af085afa54b047a71fb7acdc64cc9ba2c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+conv\+\_\+mode\+\_\+fft}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a577221d945532d6382ea97085b2ffd09}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+corr\+\_\+mode\+\_\+fft}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a6eb32f6fa9c60cb9b4af66630f98786f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+conv\+\_\+precision\+\_\+single}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ab646dfffa05b087c975a5f117765add3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+corr\+\_\+precision\+\_\+single}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a4b43b5272f7faef7bfec6dfd491a6e4e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+conv\+\_\+precision\+\_\+double}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_ad85a0b5c1f1c3b2dfccf87172db617c9}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+corr\+\_\+precision\+\_\+double}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa51a6164ba3820866ee9ccff51833285}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+max\+\_\+reg\+\_\+brngs}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af1b83bdb8b2a0784bccab93b56849711}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+shift}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a37f8e1c0c4c377d64a5a230411205e7b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+inc}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a5d7fb5a70b20beee2f8b4cdd559676f5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+mcg31}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a6077814b89800cccff67fd6cb961d5b2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+r250}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a352a652f6229b5540b676d51200b568a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+mrg32k3a}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aaea5b1f74ce74fb40ff6bf7d7535c80c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+mcg59}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a99742666c0949a699d823844117ba4ca}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+wh}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afae848a420b733d3db3312161a1d5a9c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+sobol}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a13fcd2ab1031f73a87384dde469369e4}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+niederr}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a3ceb3cd80403098adbb8d13c6d9c07cc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+mt19937}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a0b6a462e386bf128b859380c30554aaa}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+mt2203}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a29d7f3e8a76ebc1be03dff3d367797fc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+iabstract}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab759ce0dacbebdab4d6a62b2b05b75c4}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+dabstract}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab6b40d5e49567f5c146933dedfd70db2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+sabstract}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a47b85c996bf82e841a4dab6149e260a1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+sfmt19937}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af84f5af397763ef4a9687fd59204756c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+nondeterm}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a342beee42aa0efaa7944268e4a09e339}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+ars5}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a59ec16a2fe200957720047fc221a2378}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+philox4x32x10}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_af5f4236f357b1e2f8d2d1727884d7c6b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+rdrand}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a1a3c3710b201073dc4ac2b31580773f3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+brng\+\_\+nondeterm\+\_\+nretries}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a9ff8942cfa3c9628d3f83d787eae2c43}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+qrng\+\_\+leapfrog\+\_\+components}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a27aac4efc542497c7fe14a6e02836d7c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+user\+\_\+qrng\+\_\+initial\+\_\+values}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ae3bf4e77293319e697909563aa98d0d7}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+user\+\_\+primitive\+\_\+polyms}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a786cd36fb5d843f4b98f6c1110d02e63}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+user\+\_\+init\+\_\+direction\+\_\+numbers}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a7986875d40b3d08bc5d70b66bacd8160}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+user\+\_\+irred\+\_\+polyms}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a5f1fe4973045b4a78f3675b39de8d296}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+user\+\_\+direction\+\_\+numbers}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a6769266a87201402d3182a39dc0dc836}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+qrng\+\_\+override\+\_\+1st\+\_\+dim\+\_\+init}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a18e3f3cf12bc99bd91a04a980f3f04bb}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+init\+\_\+method\+\_\+standard}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a3c7809e12d1ea5a671732ee8637e67d0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+init\+\_\+method\+\_\+leapfrog}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a882304cd69b4e3e229ebfb5c76e46c38}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+init\+\_\+method\+\_\+skipahead}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ad047294813c6bc59e7ec1e6e4c05688b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+init\+\_\+method\+\_\+skipaheadex}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a45d16db11221f67cb71bb10844c99745}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+accuracy\+\_\+flag}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a0c9bec8417707d21ae4220fdf9b3c664}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+uniform\+\_\+std}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ad742253fdc7e2be839feaedfe79e50c8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+uniform\+\_\+std\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afbb27b6460843ed443e194d535f9a9f6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+uniformbits\+\_\+std}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac3bdb8877c41979ef164e85d99c4407f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+uniformbits32\+\_\+std}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a49da18fb35cc1d51f9373ce8b4896249}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+uniformbits64\+\_\+std}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2c674a09079841d69614d88cb8da9540}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gaussian\+\_\+boxmuller}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aeb9925e38b040c13f0f4a3abeda099c2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gaussian\+\_\+boxmuller2}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a0a7efc450eda016ad7db872b296a7cf0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gaussian\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a981807ce993ac14eefef971d52319c58}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gaussianmv\+\_\+boxmuller}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a41ff17bc03b820c0fecc7de3885da33c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gaussianmv\+\_\+boxmuller2}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa4a7259297baccbc6041593416258dd3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gaussianmv\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa91ee5967a7b65f32e912bb46f1b600b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+exponential\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a43e2074d92d0d0db42b4694475cbf274}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+exponential\+\_\+icdf\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa2c8b883faecabb967c82d54c8219803}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+laplace\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4daa7a74951e4e632ef5dae240a0aab5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+weibull\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af901b73e5ffbc273ff743e6fa9f4bf7a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+weibull\+\_\+icdf\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2de4a8940c0255ea404a76e9a98ce556}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+cauchy\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_acd4c187c5a37f242c609e84c89053895}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+rayleigh\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab338947d3b8a4ff722e76c1a663234e0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+rayleigh\+\_\+icdf\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4b16cd808aabe7d3c1a41be86f8b2ca2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+lognormal\+\_\+boxmuller2}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a60eee7e9e2eb47d1fbb3adcaf1045962}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+lognormal\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac2ea374b3b694d4d0c9de367012df049}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+lognormal\+\_\+boxmuller2\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afd479cf6f829c1ca86e97ae980b935f0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+lognormal\+\_\+icdf\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a9e08c8252a3e4c785ad04172d7cde0a0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gumbel\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a60b0456141cf45f4fd258537410cdee2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gamma\+\_\+gnorm}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a098608553885e973ed88ee3ad48844cc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+gamma\+\_\+gnorm\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a55c49816e6e93c1fd3bf4aa7e0d9440f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+beta\+\_\+cja}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4f26f5868abb057a5e6327f4a09ff065}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+beta\+\_\+cja\+\_\+accurate}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab6590a65bda7c5d811445018f0ff1c71}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+chisquare\+\_\+chi2gamma}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ae7675915ee17b0c5e84aa23955dc7acb}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+bernoulli\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2a4653fe54be24e82204436f5062e7e9}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+geometric\+\_\+icdf}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af3cfc7996831ff9643e52ecbd575013f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+binomial\+\_\+btpe}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a93e91418813da5620da9ea017691f1ae}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+multinomial\+\_\+multpoisson}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a04e8d966f890509d96a52f81cbeff3b8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+hypergeometric\+\_\+h2pe}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a24e5c8e52c72643107d1f7a894c24849}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+poisson\+\_\+ptpe}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab5756258cb75fa3f8c89f13c970ac323}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+poisson\+\_\+poisnorm}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a04282bfca58b998204e6b45870b35d06}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+poissonv\+\_\+poisnorm}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4911007c6c1c66d1396bda86b053eb24}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+rng\+\_\+method\+\_\+negbinomial\+\_\+nbar}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a22f31b413a61c3d678ff46dbda1dfb7e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+matrix\+\_\+storage\+\_\+full}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af55282bcf6fd5003477ba695f827411c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+matrix\+\_\+storage\+\_\+packed}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a88288a92312ed8a0e2fa9ff945886627}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+matrix\+\_\+storage\+\_\+diagonal}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aaf822f04e693480adb26ce0f97cda149}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+matrix\+\_\+storage\+\_\+rows}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a888cf117a9ac5f6fe4603c99bac337c4}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+matrix\+\_\+storage\+\_\+cols}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afd66966a00ecf4b7796db4a629437942}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+matrix\+\_\+storage\+\_\+full}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af22ef9dc46e6646f229145708e7d1adb}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+matrix\+\_\+storage\+\_\+l\+\_\+packed}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a5dba6a42161397569a32451badeb5fa8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+matrix\+\_\+storage\+\_\+u\+\_\+packed}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2177c63dcbc7b25efa7f6ea1710cb226}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+fast}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a89ca74b6c462835e8787486d8f0ab70a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+1pass}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a8aafd411f461c34ba7b4a44756736223}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+fast\+\_\+user\+\_\+mean}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a0cfd8a018e4638b25637c28f4a11a5b8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+cp\+\_\+to\+\_\+covcor}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4d7ec94f914b87f863dd952e55667625}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+sum\+\_\+to\+\_\+mom}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa63ac764856b5e4e423c54e6c47de2f0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+sd}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac79535a54701d56ecd0f0b3a617e08aa}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+tbs}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afcd938767f67a514632ad38834e3031a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+mi}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ae11d5064c54d578051b9b17c794c8f06}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+radix}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4efe5c8bb1be1d74b9181e8bb023452f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+bacon}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a5ce3b47ba60f47ea47e7e076dc58b6c1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+squants\+\_\+zw}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2f4dd631c0c40d30a91f9f0f980931e1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+squants\+\_\+zw\+\_\+fast}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a8137a1c54083275816171f3d37374866}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+bacon\+\_\+params\+\_\+n}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a9b65a44b75775a14ad96bf508f21dfd0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+bacon\+\_\+mahalanobis\+\_\+init}}
+\item 
+integer(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_aaad935a29189941b1e206b46bc330431}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+method\+\_\+bacon\+\_\+median\+\_\+init}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a97fa83ef3e25afda7481ef18cd826f39}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+tbs\+\_\+params\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a21d976528758659098b2615443956ab7}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+mi\+\_\+params\+\_\+size}}
+\item 
+real(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a8331e5d0a87a2cacc9fcf84817accef0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+dnan}}
+\item 
+real(kind=4) \mbox{\hyperlink{namespacemkl__vsl__type_a808c92001082a79f4ef38bad0a0c7881}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+snan}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4c0a695a8419f3ef2f457c111bfc56f0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+squants\+\_\+zw\+\_\+params\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ad54e7782129c68996253b542ba3630ea}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+dimen}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4b3e35733d9092f06c1852db4ac58e24}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+observ\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a1ade8c1c56cedbc89c63d006c8c5a9b8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+observ}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2302b723a77805f73795f27c773dfa42}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+observ\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a449eca71d10b9be630da0b91d8aad35f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+indc}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2f7299225f150bb3e8ecab3cc2948c54}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+weights}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a009cbb7934f0c8539dfbe5b2649c07d3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mean}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_abf9a58ea3bbfe48ad84b406d17aa9027}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+2r\+\_\+mom}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af72cf42fbb8c7637b6d12c81d9041fe5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+3r\+\_\+mom}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4880688592fbea1419b83ead1d178f79}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+4r\+\_\+mom}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac30274c53c1bc0ca321b6c6d325b1667}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+2c\+\_\+mom}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a5331b1f839bb16f8959a41a8e54de235}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+3c\+\_\+mom}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa4cf491aaa4ce9681a0ec0fc364370dd}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+4c\+\_\+mom}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4ca4fb2471a2a080cf518705a9daf8c6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+kurtosis}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a0fd6d73c411a23762b7e31a1166bd4be}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+skewness}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa308fe93c858989d30496a671964dd1f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+min}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a2cf0c53d4b165e8d7e2ce128cc1125d2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+max}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a689554853cdafa60395f35992fd50c57}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+sorted\+\_\+observ}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a003fd742cbed4a3cce7bfcd9c32468f3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+sorted\+\_\+observ\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a7ac43224c0a00653ed2c6652bcb0b4b6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+variation}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ad1982c68c04885d316304e40a8855e96}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+cov}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab2d56af7b8e5c0711d2073a9988db08d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+cov\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a019dcda3316bbad5d7e93ae43870ffb1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+cor}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac45293f516c5af73e623e80f1651e10c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+cor\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa9752462f150ca53ce3a03299554c488}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+accum\+\_\+weight}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a174d36b50c16a1d0756ac2bc34218f1e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+quant\+\_\+order\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aca2bad4314f12f15db066b860b8b3023}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+quant\+\_\+order}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a22a323ef2c61231748b0ff193d4e958d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+quant\+\_\+quantiles}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a578d1934be69879095708082a09d912b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+order\+\_\+stats}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a9d02e96f87aad0cce45cf5074be35fed}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+group\+\_\+indc}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a046ebd00162ead27aa55308523abb878}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+pooled\+\_\+cov\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a775075a4cd272497fc61b3af8eb6eff0}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+pooled\+\_\+mean}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa1af037aba4916b41df6c6e97efd4cc2}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+pooled\+\_\+cov}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aec3a4d0795f952bf72308f78e3d64256}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+group\+\_\+cov\+\_\+indc}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a0f9c5f1de4e9505de16b7454a48a8138}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+req\+\_\+group\+\_\+indc}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a7e0f4633ea3e5cebb2d912db519e0e51}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+group\+\_\+mean}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afa7d362645364485c41fc4a191edfa1e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+group\+\_\+cov\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a611bd28d6b3b57650a6cabc46f2630cc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+group\+\_\+cov}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a0ce56f6203a7385309b9247e3251ebfd}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+robust\+\_\+cov\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_acb3d4454eab82778bfd1c54ccb5de8fc}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+robust\+\_\+cov\+\_\+params\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ae79ccc7caf42e6f0e0e74c3582b53a6b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+robust\+\_\+cov\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a324406972b987c5d97aa988bc069b66c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+robust\+\_\+mean}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a1cbb187fb2a224ce0edcd03c63e03e3c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+robust\+\_\+cov}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a7ab7fb5b665e84ba536b6ff683df5197}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+outliers\+\_\+params\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a57475b5c7776e5a4a61069b880faebb6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+outliers\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab75ee430b489110452415ed63cfe67e8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+outliers\+\_\+weight}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a44268fe6b5ef7bb583e7229a0dc7b0ce}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+order\+\_\+stats\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a1a2592a4876c14d5580e52700ac78350}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+partial\+\_\+cov\+\_\+idx}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aeb0133a3b6913337dc1337bafc8a9b43}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+partial\+\_\+cov}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a45e051d8bcd5deeeb43b5fc3b73440fe}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+partial\+\_\+cov\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a3fe37a4abb61e8b796b6116027513607}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+partial\+\_\+cor}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afcbd6017a676b6436c3f4c8b36166740}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+partial\+\_\+cor\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ad0b22791071ed5c1426dce426d3777ab}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+params\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a09bb3a5658204f3bf99dac1998c24e32}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aab35d844b7f2f4e3651ddf95f00654ab}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+init\+\_\+estimates\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ae875327f08dcbb15d0c4d85cc4267cb1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+init\+\_\+estimates}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab6227190ee15e09abec7d00c012ccadf}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+simul\+\_\+vals\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a26ee8a7c4ae59c6192c093b53f22d0ca}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+simul\+\_\+vals}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac2b6d75466f77d721a2fecd30589e107}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+estimates\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a145a91d4a88644c532051f6a5c1c4603}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+estimates}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a4125db4a90b79871e5ae6b623ae16e9f}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+prior\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ab87a62e5126a24f6a316054520598471}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mi\+\_\+prior}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa782babb6b7f33bf7530781c2e045e00}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+paramtr\+\_\+cor}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a76c29902a9dea08af9ab170d639a24c5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+paramtr\+\_\+cor\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af42fd0d6f978c192064812cfe32f2a25}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+stream\+\_\+quant\+\_\+params\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a1a8eee0e2858102fccf16244bb2cd2f6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+stream\+\_\+quant\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_acb959401ee5f0c117f83099311e9ab6e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+stream\+\_\+quant\+\_\+order\+\_\+n}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a14bf26d434a95b20fc12c9bcf402669d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+stream\+\_\+quant\+\_\+order}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a6f282801e5ddcaf397b5361ac425e24e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+stream\+\_\+quant\+\_\+quantiles}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aec9957dee91f9463902d76a7cf1dc126}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+sum}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_a9f938541f9ca933f3c1d2c796e5f33ca}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+2r\+\_\+sum}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aa2abb3f0358bfd54816b79f837989269}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+3r\+\_\+sum}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac3ebcc515c2b17bfa24fbdfe21cbadb9}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+4r\+\_\+sum}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac6803c9048bdbd82b17e45c29bbbaffd}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+2c\+\_\+sum}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_aeb11ed1f2688c175047530eb4df7b501}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+3c\+\_\+sum}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac581282a196537368dc8058b76ae2453}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+4c\+\_\+sum}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_afdcb7af3d5dbb04e70226f6ea29d6859}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+cp}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_af3e555bd57b4a1f6996710f4de3f738b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+cp\+\_\+storage}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ae575dc8de9dfe958ccd8028da479a6f3}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mdad}}
+\item 
+integer \mbox{\hyperlink{namespacemkl__vsl__type_ac4265a201735dfbee299956eb893d888}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+ed\+\_\+mnad}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a5dcebbec2e6404122fa0552b666bb336}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+mean}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a67a2b67a53fe797b79727126a1184149}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+2r\+\_\+mom}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a242ae226be4c124d793a7ff77dd998ad}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+3r\+\_\+mom}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ae1577fdb511e55483da22ee240575ee6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+4r\+\_\+mom}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ac0203ac34ddad43dd1f46c87589ad48c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+2c\+\_\+mom}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ace0237bfe9a042dc245193984655e24b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+3c\+\_\+mom}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a4e47e3661c4ad146a27f0e2d8b07c91b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+4c\+\_\+mom}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ac525631a13205232626ca9d68b8a930b}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+sum}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a3d81860e7f3f2a1d36f072a0762a2b01}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+2r\+\_\+sum}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a796f206e35f94963288c0fd323e9bef1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+3r\+\_\+sum}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a72b6f82301b87af7850fb52ae310cc66}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+4r\+\_\+sum}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_aa47cdc87aa1660f229b329ebfbe57af1}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+2c\+\_\+sum}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a1c77402f99e977e37b1aa509fc25724d}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+3c\+\_\+sum}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a63449ea0b2db6af05f20227217235b05}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+4c\+\_\+sum}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a1b5f0b245c4570c84665f49545b85348}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+kurtosis}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a038df5dcbd5e7a68ad5e166db1fa1667}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+skewness}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_aba6a5ce53053002fe59e3653dbd40fd6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+variation}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ab9aa36b7b48a1cebeaf6e5ac14a80141}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+min}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a8ccc3ecc309fc21e9e028d2e08c40000}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+max}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ab0f64b0fb596a85432e559850081e942}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+cov}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a94eb85a1ee9c83b57333fac5da4bfc3e}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+cor}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a3491e763cba6b5332996a3a5d874e6e5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+cp}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a72d511e46088b0470685fdbd2c865e9a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+pooled\+\_\+cov}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a2d91eea013fc74bc14da6effb8c0af41}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+group\+\_\+cov}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a2db8a7dfa6fdca93177b3dd3a9dd5754}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+pooled\+\_\+mean}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a36b8dca05b2fc559c44f4487fb8963d8}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+group\+\_\+mean}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_aba75767affb34711b3a14920b78b7e2a}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+quants}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a80629662a6799048576b5f6d4a226306}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+sorted\+\_\+observ}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a4a152cd4733c4225d3a7c0ae1e6d4417}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+order\+\_\+stats}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a4acd99134fd91f55b33ef75f060c4ca5}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+robust\+\_\+cov}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a082b566f799d7078cd35f3ffb811cbe6}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+outliers}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a12b8d7ed275deb759f1b329b1555eaba}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+partial\+\_\+cov}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_aeb18b4120fca9c40e731fb95ac94bd36}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+partial\+\_\+cor}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a3de01fbc98b4436ad96b3af8bd775528}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+missing\+\_\+vals}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ac0643f642143e5e6e9a5f0e4bcb0b833}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+paramtr\+\_\+cor}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_a7dd8c850cce73e31f293641ee0c0d99c}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+stream\+\_\+quants}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_afab0677577fe9881aa56a66b084a3f45}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+mdad}}
+\item 
+integer(kind=8) \mbox{\hyperlink{namespacemkl__vsl__type_ad0ade57083a658483f18e82949956a46}{mkl\+\_\+vsl\+\_\+type\+::vsl\+\_\+ss\+\_\+mnad}}
+\end{DoxyCompactItemize}

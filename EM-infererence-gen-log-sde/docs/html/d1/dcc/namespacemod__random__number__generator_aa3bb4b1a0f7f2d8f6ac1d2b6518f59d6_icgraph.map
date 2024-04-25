@@ -1,0 +1,6 @@
+<map id="mod_random_number_generator::boxmuller" name="mod_random_number_generator::boxmuller">
+<area shape="rect" id="node1" title="Implementation of the Box&#45;muller algorithm to genrate Gaussian random variables." alt="" coords="509,39,744,80"/>
+<area shape="rect" id="node2" href="$d8/dd5/namespacemod__milstein__solver.html#a16bfa06b499d32cad645bfc8b3be1734" title="Simulate an increment of the related Browninar path." alt="" coords="249,5,439,47"/>
+<area shape="rect" id="node4" href="$d1/dcc/namespacemod__random__number__generator.html#ab22d1a4cd14d9bdee67bd6d3d83ce9d4" title="Returns a number with Gaussian distribution using the Box&#45;Muller algortihm." alt="" coords="227,71,461,112"/>
+<area shape="rect" id="node3" href="$d8/dd5/namespacemod__milstein__solver.html#a4526814c92a54d7b7685631a05b8357d" title="Computes a iteration of the Milstein method." alt="" coords="5,5,179,47"/>
+</map>

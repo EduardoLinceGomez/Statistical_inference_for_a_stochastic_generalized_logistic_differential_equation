@@ -1,0 +1,5 @@
+<map id="mod_milstein_solver::get_brownian_increment" name="mod_milstein_solver::get_brownian_increment">
+<area shape="rect" id="Node000001" title="Simulate an increment of the related Browninar path." alt="" coords="207,5,377,45"/>
+<area shape="rect" id="Node000002" href="$d8/dd5/namespacemod__milstein__solver.html#a283e49b9c27d2db70dea7adcd22f2d80" title="Computes a iteration of the Milstein method." alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
+</map>

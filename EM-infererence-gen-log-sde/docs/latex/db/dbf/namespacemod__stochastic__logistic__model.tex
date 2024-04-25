@@ -1,0 +1,72 @@
+\hypertarget{namespacemod__stochastic__logistic__model}{}\doxysection{mod\+\_\+stochastic\+\_\+logistic\+\_\+model Module Reference}
+\label{namespacemod__stochastic__logistic__model}\index{mod\_stochastic\_logistic\_model@{mod\_stochastic\_logistic\_model}}
+
+
+This module compute the coeffcients of the underlyng generalized logistc SDE.  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemod__stochastic__logistic__model_a810bc6a591e04258fcc5ea73d58b917f}{compute\+\_\+drift}} (alpha, m, x, y)
+\begin{DoxyCompactList}\small\item\em $<$\+BRIEF\+\_\+\+DESCRIPTION$>$ \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacemod__stochastic__logistic__model_a7963eb8d219c8e19b8fe758c4ea96370}{compute\+\_\+diffusion}} (sigma, x, y)
+\begin{DoxyCompactList}\small\item\em $<$\+BRIEF\+\_\+\+DESCRIPTION$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This module compute the coeffcients of the underlyng generalized logistc SDE. 
+
+\begin{DoxyAuthor}{Author}
+E. Lince-\/\+Gomez, F. Baltazar-\/\+Larios, S. Diaz-\/\+Infante \begin{eqnarray*}
+        dX(t) &=& f(X(t)) dt + g(X(t)) dB(t) 
+        \\
+        f(x) &:=& \alpha x \Bigg[ 1 - \Bigg(\frac{x}{K} \Bigg) ^ m \Bigg] 
+        \\
+        g(x) &:=& \sigma x,\qquad t>t_0 \\
+        x_0 &=& X(0), \quad x_0 \in [0, 1] .
+ \end{eqnarray*}
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+the manuscript (...) for more details. 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemod__stochastic__logistic__model_a7963eb8d219c8e19b8fe758c4ea96370}\label{namespacemod__stochastic__logistic__model_a7963eb8d219c8e19b8fe758c4ea96370}} 
+\index{mod\_stochastic\_logistic\_model@{mod\_stochastic\_logistic\_model}!compute\_diffusion@{compute\_diffusion}}
+\index{compute\_diffusion@{compute\_diffusion}!mod\_stochastic\_logistic\_model@{mod\_stochastic\_logistic\_model}}
+\doxysubsubsection{\texorpdfstring{compute\_diffusion()}{compute\_diffusion()}}
+{\footnotesize\ttfamily subroutine mod\+\_\+stochastic\+\_\+logistic\+\_\+model\+::compute\+\_\+diffusion (\begin{DoxyParamCaption}\item[{real(real32), intent(in)}]{sigma,  }\item[{real(real32), intent(in)}]{x,  }\item[{real(real32), intent(out)}]{y }\end{DoxyParamCaption})}
+
+
+
+$<$\+BRIEF\+\_\+\+DESCRIPTION$>$ 
+
+$<$\+DETAILED\+\_\+\+DESCRIPTION$>$ 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}$<$in} & or out or inout\texorpdfstring{$>$}{>}\mbox{]} $<$\+PARAM1$>$  \\
+\hline
+{\em \mbox{[}$<$in} & or out or inout\texorpdfstring{$>$}{>}\mbox{]} $<$\+PARAM2$>$  \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacemod__stochastic__logistic__model_a810bc6a591e04258fcc5ea73d58b917f}\label{namespacemod__stochastic__logistic__model_a810bc6a591e04258fcc5ea73d58b917f}} 
+\index{mod\_stochastic\_logistic\_model@{mod\_stochastic\_logistic\_model}!compute\_drift@{compute\_drift}}
+\index{compute\_drift@{compute\_drift}!mod\_stochastic\_logistic\_model@{mod\_stochastic\_logistic\_model}}
+\doxysubsubsection{\texorpdfstring{compute\_drift()}{compute\_drift()}}
+{\footnotesize\ttfamily subroutine mod\+\_\+stochastic\+\_\+logistic\+\_\+model\+::compute\+\_\+drift (\begin{DoxyParamCaption}\item[{real(real32), intent(in)}]{alpha,  }\item[{real(real32), intent(in)}]{m,  }\item[{real(real32), intent(in)}]{x,  }\item[{real(real32), intent(out)}]{y }\end{DoxyParamCaption})}
+
+
+
+$<$\+BRIEF\+\_\+\+DESCRIPTION$>$ 
+
+$<$\+DETAILED\+\_\+\+DESCRIPTION$>$ 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}$<$in} & or out or inout\texorpdfstring{$>$}{>}\mbox{]} $<$\+PARAM1$>$  \\
+\hline
+{\em \mbox{[}$<$in} & or out or inout\texorpdfstring{$>$}{>}\mbox{]} $<$\+PARAM2$>$  \\
+\hline
+\end{DoxyParams}

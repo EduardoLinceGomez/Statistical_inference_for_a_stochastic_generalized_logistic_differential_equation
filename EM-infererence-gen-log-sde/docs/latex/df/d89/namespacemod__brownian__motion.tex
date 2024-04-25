@@ -1,0 +1,57 @@
+\hypertarget{namespacemod__brownian__motion}{}\doxysection{mod\+\_\+brownian\+\_\+motion Module Reference}
+\label{namespacemod__brownian__motion}\index{mod\_brownian\_motion@{mod\_brownian\_motion}}
+
+
+This module contains functions to handle various aspects of one-\/dimensional Brownian motion.  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemod__brownian__motion_a616a49ecd828daabdd89057f70c6b9a8}{get\+\_\+brownian\+\_\+path}} (n\+\_\+resolution, r\+\_\+operative\+\_\+factor, time\+\_\+horizon, brownian\+\_\+path, user\+\_\+seed, debug)
+\begin{DoxyCompactList}\small\item\em Returns a realization of a standard Brownian motion given a homogenoun stenci with L operational points and a resolution of N points. Such that \$N = r $\ast$ L\$ and \$h\+\_\+op = h\+\_\+res\$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This module contains functions to handle various aspects of one-\/dimensional Brownian motion. 
+
+\begin{DoxyAuthor}{Author}
+E. Lince-\/\+Gomez, F. Baltazar-\/\+Larios, S. Diaz-\/\+Infante 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+Higham \& Kloeden 2021 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemod__brownian__motion_a616a49ecd828daabdd89057f70c6b9a8}\label{namespacemod__brownian__motion_a616a49ecd828daabdd89057f70c6b9a8}} 
+\index{mod\_brownian\_motion@{mod\_brownian\_motion}!get\_brownian\_path@{get\_brownian\_path}}
+\index{get\_brownian\_path@{get\_brownian\_path}!mod\_brownian\_motion@{mod\_brownian\_motion}}
+\doxysubsubsection{\texorpdfstring{get\_brownian\_path()}{get\_brownian\_path()}}
+{\footnotesize\ttfamily subroutine mod\+\_\+brownian\+\_\+motion\+::get\+\_\+brownian\+\_\+path (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n\+\_\+resolution,  }\item[{integer, intent(in)}]{r\+\_\+operative\+\_\+factor,  }\item[{real(kind=8), intent(in)}]{time\+\_\+horizon,  }\item[{real(kind=8), dimension(\+:), intent(out), allocatable}]{brownian\+\_\+path,  }\item[{integer, intent(in), optional}]{user\+\_\+seed,  }\item[{logical, intent(in), optional}]{debug }\end{DoxyParamCaption})}
+
+
+
+Returns a realization of a standard Brownian motion given a homogenoun stenci with L operational points and a resolution of N points. Such that \$N = r $\ast$ L\$ and \$h\+\_\+op = h\+\_\+res\$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+\_\+resolution} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d89/namespacemod__brownian__motion_a616a49ecd828daabdd89057f70c6b9a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d89/namespacemod__brownian__motion_a616a49ecd828daabdd89057f70c6b9a8_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,152 @@
+\hypertarget{namespacemod__random__number__generator}{}\doxysection{mod\+\_\+random\+\_\+number\+\_\+generator Module Reference}
+\label{namespacemod__random__number__generator}\index{mod\_random\_number\_generator@{mod\_random\_number\_generator}}
+
+
+This module implements the Box-\/\+Muller algorithm to generate random variables with standard Gaussian distribution from a uniform ditributed random variable. This module enclose tree functions.  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_ab84a1686de9361f9d7ac623160524f61}{unif}} ()
+\begin{DoxyCompactList}\small\item\em Returns a random variables with uniform distribution using the standar gfortran random number generator, the returned value is a real 32. \end{DoxyCompactList}\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_aa3bb4b1a0f7f2d8f6ac1d2b6518f59d6}{boxmuller}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of the Box-\/muller algorithm to genrate Gaussian random variables. \end{DoxyCompactList}\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_ab22d1a4cd14d9bdee67bd6d3d83ce9d4}{normalvar}} ()
+\begin{DoxyCompactList}\small\item\em Returns a number with Gaussian distribution using the Box-\/\+Muller algortihm. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacemod__random__number__generator_a7a1afa36de735d28302de4e4004d31f4}{mkl\+\_\+gaussian\+\_\+sampler}} (buffer\+\_\+size, mean\+\_\+a, std\+\_\+a, user\+\_\+seed, gaussian\+\_\+sample)
+\item 
+real function \mbox{\hyperlink{namespacemod__random__number__generator_a9f8180b23c1f03b40976510ea34b2c16}{unif\+\_\+}} (ix)
+\begin{DoxyCompactList}\small\item\em Returns a random variables with uniform distribution using the standar gfortran random number generator, the returned value is a real 32. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This module implements the Box-\/\+Muller algorithm to generate random variables with standard Gaussian distribution from a uniform ditributed random variable. This module enclose tree functions. 
+
+\begin{DoxyAuthor}{Author}
+E. Lince-\/\+Gomez, F. Baltazar-\/\+Larios, S. Diaz-\/\+Infante 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+Kloeden \& Platen 1992 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemod__random__number__generator_aa3bb4b1a0f7f2d8f6ac1d2b6518f59d6}\label{namespacemod__random__number__generator_aa3bb4b1a0f7f2d8f6ac1d2b6518f59d6}} 
+\index{mod\_random\_number\_generator@{mod\_random\_number\_generator}!boxmuller@{boxmuller}}
+\index{boxmuller@{boxmuller}!mod\_random\_number\_generator@{mod\_random\_number\_generator}}
+\doxysubsubsection{\texorpdfstring{boxmuller()}{boxmuller()}}
+{\footnotesize\ttfamily real(real32) function mod\+\_\+random\+\_\+number\+\_\+generator\+::boxmuller}
+
+
+
+Implementation of the Box-\/muller algorithm to genrate Gaussian random variables. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em seed} & initial value for the uniform random generator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]\+: Try other random-\/number generators, such like mersene an others \end{DoxyRefDesc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d1/dcc/namespacemod__random__number__generator_aa3bb4b1a0f7f2d8f6ac1d2b6518f59d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dcc/namespacemod__random__number__generator_aa3bb4b1a0f7f2d8f6ac1d2b6518f59d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemod__random__number__generator_a7a1afa36de735d28302de4e4004d31f4}\label{namespacemod__random__number__generator_a7a1afa36de735d28302de4e4004d31f4}} 
+\index{mod\_random\_number\_generator@{mod\_random\_number\_generator}!mkl\_gaussian\_sampler@{mkl\_gaussian\_sampler}}
+\index{mkl\_gaussian\_sampler@{mkl\_gaussian\_sampler}!mod\_random\_number\_generator@{mod\_random\_number\_generator}}
+\doxysubsubsection{\texorpdfstring{mkl\_gaussian\_sampler()}{mkl\_gaussian\_sampler()}}
+{\footnotesize\ttfamily subroutine mod\+\_\+random\+\_\+number\+\_\+generator\+::mkl\+\_\+gaussian\+\_\+sampler (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{buffer\+\_\+size,  }\item[{real(kind=8), intent(in)}]{mean\+\_\+a,  }\item[{real(kind=8), intent(in)}]{std\+\_\+a,  }\item[{integer(kind=4), intent(in), optional}]{user\+\_\+seed,  }\item[{real(kind=8), dimension(\+:), intent(out), allocatable}]{gaussian\+\_\+sample }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dcc/namespacemod__random__number__generator_a7a1afa36de735d28302de4e4004d31f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemod__random__number__generator_ab22d1a4cd14d9bdee67bd6d3d83ce9d4}\label{namespacemod__random__number__generator_ab22d1a4cd14d9bdee67bd6d3d83ce9d4}} 
+\index{mod\_random\_number\_generator@{mod\_random\_number\_generator}!normalvar@{normalvar}}
+\index{normalvar@{normalvar}!mod\_random\_number\_generator@{mod\_random\_number\_generator}}
+\doxysubsubsection{\texorpdfstring{normalvar()}{normalvar()}}
+{\footnotesize\ttfamily real(real32) function mod\+\_\+random\+\_\+number\+\_\+generator\+::normalvar}
+
+
+
+Returns a number with Gaussian distribution using the Box-\/\+Muller algortihm. 
+
+This function can be ommited in the case of a step forward implelemtation 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em seed} & a int32 with the initial value for the randim uniform generator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]\+: Implement this furnction such that returns a realization path of the standard Brownian motion \end{DoxyRefDesc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dcc/namespacemod__random__number__generator_ab22d1a4cd14d9bdee67bd6d3d83ce9d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemod__random__number__generator_ab84a1686de9361f9d7ac623160524f61}\label{namespacemod__random__number__generator_ab84a1686de9361f9d7ac623160524f61}} 
+\index{mod\_random\_number\_generator@{mod\_random\_number\_generator}!unif@{unif}}
+\index{unif@{unif}!mod\_random\_number\_generator@{mod\_random\_number\_generator}}
+\doxysubsubsection{\texorpdfstring{unif()}{unif()}}
+{\footnotesize\ttfamily real(real32) function mod\+\_\+random\+\_\+number\+\_\+generator\+::unif}
+
+
+
+Returns a random variables with uniform distribution using the standar gfortran random number generator, the returned value is a real 32. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ix} & Dummy paramer for the seed initialization for the random generator \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dcc/namespacemod__random__number__generator_ab84a1686de9361f9d7ac623160524f61_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemod__random__number__generator_a9f8180b23c1f03b40976510ea34b2c16}\label{namespacemod__random__number__generator_a9f8180b23c1f03b40976510ea34b2c16}} 
+\index{mod\_random\_number\_generator@{mod\_random\_number\_generator}!unif\_@{unif\_}}
+\index{unif\_@{unif\_}!mod\_random\_number\_generator@{mod\_random\_number\_generator}}
+\doxysubsubsection{\texorpdfstring{unif\_()}{unif\_()}}
+{\footnotesize\ttfamily real function mod\+\_\+random\+\_\+number\+\_\+generator\+::unif\+\_\+ (\begin{DoxyParamCaption}\item[{}]{ix }\end{DoxyParamCaption})}
+
+
+
+Returns a random variables with uniform distribution using the standar gfortran random number generator, the returned value is a real 32. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ix} & Dummy paramer for the seed initialization for the random generator \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dcc/namespacemod__random__number__generator_a9f8180b23c1f03b40976510ea34b2c16_icgraph}
+\end{center}
+\end{figure}

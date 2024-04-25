@@ -1,0 +1,6 @@
+<map id="mod_random_number_generator::boxmuller" name="mod_random_number_generator::boxmuller">
+<area shape="rect" id="Node000001" title="Implementation of the Box&#45;muller algorithm to genrate Gaussian random variables." alt="" coords="5,29,213,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="62,30,59,20,67,10,83,5,109,3,139,6,155,13,153,18,138,11,109,8,85,10,70,15,64,21,67,28"/>
+<area shape="rect" id="Node000002" href="$d1/dcc/namespacemod__random__number__generator.html#a7190dd0789517074d019626c692cfcc5" title="Returns a random variables with uniform distribution using the standar gfortran random number generat..." alt="" coords="261,29,469,69"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="213,47,248,47,248,52,213,52"/>
+</map>

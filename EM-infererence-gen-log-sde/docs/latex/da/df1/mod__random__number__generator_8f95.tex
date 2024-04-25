@@ -1,0 +1,16 @@
+\hypertarget{mod__random__number__generator_8f95}{}\doxysection{src/mod\+\_\+random\+\_\+number\+\_\+generator.f95 File Reference}
+\label{mod__random__number__generator_8f95}\index{src/mod\_random\_number\_generator.f95@{src/mod\_random\_number\_generator.f95}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacemod__random__number__generator}{mod\+\_\+random\+\_\+number\+\_\+generator}}
+\begin{DoxyCompactList}\small\item\em This module implements the Box-\/\+Muller algorithm to generate random variables with standard Gaussian distribution from a uniform ditributed random variable. This module enclose tree functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real function \mbox{\hyperlink{namespacemod__random__number__generator_a7190dd0789517074d019626c692cfcc5}{mod\+\_\+random\+\_\+number\+\_\+generator\+::unif}} (ix)
+\begin{DoxyCompactList}\small\item\em Returns a random variables with uniform distribution using the standar gfortran random number generator, the returned value is a real 32. \end{DoxyCompactList}\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_aa3bb4b1a0f7f2d8f6ac1d2b6518f59d6}{mod\+\_\+random\+\_\+number\+\_\+generator\+::boxmuller}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of the Box-\/muller algorithm to genrate Gaussian random variables. \end{DoxyCompactList}\item 
+real(real32) function \mbox{\hyperlink{namespacemod__random__number__generator_ab22d1a4cd14d9bdee67bd6d3d83ce9d4}{mod\+\_\+random\+\_\+number\+\_\+generator\+::normalvar}} ()
+\begin{DoxyCompactList}\small\item\em Returns a number with Gaussian distribution using the Box-\/\+Muller algortihm. \end{DoxyCompactList}\end{DoxyCompactItemize}
